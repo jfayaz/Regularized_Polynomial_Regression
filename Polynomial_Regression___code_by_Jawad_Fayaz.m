@@ -1,6 +1,7 @@
 clear ; close all; clc; addpath('functions')
 %% =========== Polynomial Regression ========= %%
 %  written by : JAWAD FAYAZ (email: jfayaz@uci.edu)
+%  visit: (https://jfayaz.github.io)
 
 %  ------------- Instructions -------------- %
 %  INPUT:
