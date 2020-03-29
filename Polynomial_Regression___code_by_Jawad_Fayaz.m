@@ -53,7 +53,8 @@ figure(1)
 plot(X, y, 'rx', 'MarkerSize', 10, 'LineWidth', 1.5);
 xlabel('X','fontWeight','bold')
 ylabel('y','fontWeight','bold')
-
+set(gca,'fontsize',14,'FontName', 'Times New Roman','LineWidth', 1.25,'TickDir','out','TickLength', [0.005 0.005])
+grid on; box on;
 
 %% ---------- Feature Mapping for Polynomial Regression ------
 p = Order_of_Polynomial;
@@ -94,6 +95,8 @@ title(sprintf('Polynomial Regression Learning Curve (lambda = %f)', lambda));
 xlabel('Number of Training Examples','fontWeight','bold')
 ylabel('Error','fontWeight','bold')
 legend('Train', 'Cross Validation')
+set(gca,'fontsize',14,'FontName', 'Times New Roman','LineWidth', 1.25,'TickDir','out','TickLength', [0.005 0.005])
+grid on; box on;
 
 fprintf('Polynomial Regression (lambda = %f)\n\n', lambda);
 fprintf('# Training_Examples\tTrain_Error\tCross-Validation_Error\n');
@@ -114,6 +117,8 @@ plot(lambda_vec, error_train, lambda_vec, error_val,'LineWidth', 1.5);
 legend('Train', 'Cross Validation');
 xlabel('lambda','fontWeight','bold');
 ylabel('Error','fontWeight','bold');
+set(gca,'fontsize',14,'FontName', 'Times New Roman','LineWidth', 1.25,'TickDir','out','TickLength', [0.005 0.005])
+grid on; box on;
 
 fprintf('lambda\t\tTrain_Error\tValidation_Error\n');
 for i = 1:length(lambda_vec)
